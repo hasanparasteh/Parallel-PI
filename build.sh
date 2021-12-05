@@ -14,7 +14,7 @@ fi
 if [ "$1" = "serial" ]; then
     echo "Serial build"
     echo "Building..."
-    clang serialpi.c -o build/serialpi
+    clang -Xpreprocessor -fopenmp serialpi.c -lomp -o build/serialpi
     echo "Done"
     exit 1;
 fi
