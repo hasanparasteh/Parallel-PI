@@ -42,6 +42,6 @@ int main()
 
         pi = step * full_sum;
         run_time = omp_get_wtime() - start_time;
-        printf("\n pi is %f in %f seconds %d threds \n ", pi, run_time, j);
+        printf("\n pi is %.10f in %f seconds %d threds \n ", pi, run_time, j);
     }
 }

@@ -22,5 +22,5 @@ int main()
 
     pi = step * sum;
     run_time = omp_get_wtime() - start_time;
-    printf("\n pi with %ld steps is %lf in %lf seconds\n ", num_steps, pi, run_time);
+    printf("\n pi with %ld steps is %.10f in %lf seconds\n ", num_steps, pi, run_time);
 }
